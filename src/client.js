@@ -1,6 +1,7 @@
-import { SanityClient } from "@sanity/client";
+import { createClient } from "@sanity/client";
 
-export default SanityClient({
+export const client = createClient({
     projectId: "eb0pdclv",
     dataset: "production",
+    apiVersion: "2023-05-03",
 });
